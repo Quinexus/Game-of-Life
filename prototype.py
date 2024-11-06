@@ -5,6 +5,7 @@
 # lives with 2 or 3 neighbours
 # overpopulation >3 neighbours dies
 # reproduction dead with =3 neighbours lives
+
 with open('board.txt', 'r') as f:
     board = [[char.strip('') for char in line.strip('\n')] for line in f]
 
