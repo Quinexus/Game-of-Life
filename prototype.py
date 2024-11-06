@@ -76,4 +76,4 @@ while x != 'q':
     print_board(board)
     board = update_board(board)
     write_board(board)
-    input('step')
+    x = input('step')
