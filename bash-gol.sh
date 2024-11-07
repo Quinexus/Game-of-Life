@@ -8,4 +8,28 @@
 # overpopulation >3 neighbours dies
 # reproduction dead with =3 neighbours lives
 
-mapfile -t array < board.txt
+mapfile -t board < board.txt
+
+print_board () {
+	for i in ${board[@]}; do
+		echo $i
+	done
+}
+
+check_neighbours (line_index, cell_index) {
+	declare -i n = 0
+
+	#top cell = line - 1
+	if [$line_index != 0]
+	then
+		if [${board[$line_index-1][cell_index]} == 'X']
+		then
+			n = $((n + 1))
+		fi
+	fi
+	
+
+
+
+}
+
